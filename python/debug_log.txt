@@ -1,0 +1,1 @@
+Student ID: 23, Image: C:/xampp/htdocs/ai_attendance_system/uploads/67c6302eae374.png, Result: True
