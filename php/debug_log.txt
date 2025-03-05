@@ -1,0 +1,177 @@
+Python Output: 
+Python Output: 
+Python Output: 
+Python Output: Enter Student ID: 
+Python Output: Capturing face... Press 'q' to exit
+Failed to capture image
+No match found. Verification failed.
+Access denied.
+
+Python Output: Capturing face... Press 'q' to exit
+Failed to capture image
+No match found. Verification failed.
+Access denied.
+
+Python Output: 
+Python Output: Error: No face detected.
+
+Python Output: 
+Python Output: 
+Python Output: Enter Student ID: 
+Python Output: 
+Python Output: 
+Python Output: Enter Student ID: 
+Python Output: -0.06916516274213791,0.022296901792287827,0.056082919239997864,-0.04389128088951111,-0.017969874665141106,-0.09149715304374695,-0.0533926896750927,-0.15504182875156403,0.10678708553314209,-0.09078869223594666,0.30902767181396484,-0.07106098532676697,-0.20768380165100098,-0.09796876460313797,-0.01378222182393074,0.12868356704711914,-0.14944176375865936,-0.046404123306274414,-0.049990661442279816,-0.04740094393491745,0.07716414332389832,0.013588658533990383,0.059655897319316864,0.08116650581359863,-0.07777982950210571,-0.3416888415813446,-0.12652091681957245,-0.11890194565057755,-0.004381612874567509,-0.012603305280208588,-0.03210367634892464,0.02364872768521309,-0.16284498572349548,-0.02876237966120243,-0.002741418778896332,0.03688288480043411,-0.011488020420074463,-0.0854496881365776,0.19532227516174316,-0.052487146109342575,-0.1861112117767334,0.012792488560080528,0.02675814926624298,0.20003890991210938,0.18057052791118622,0.02222280576825142,0.03850394859910011,-0.1363840401172638,0.09447162598371506,-0.1342720240354538,-0.008191579952836037,0.11492463946342468,0.043277986347675323,0.024585478007793427,-0.014344451949000359,-0.10728751122951508,0.03982048109173775,0.08737096190452576,-0.11747204512357712,0.0119246207177639,0.05483632907271385,-0.13438823819160461,0.012654933147132397,-0.036038290709257126,0.2608528435230255,0.04200834035873413,-0.13882482051849365,-0.11461766064167023,0.061997413635253906,-0.15827661752700806,-0.0654623880982399,0.07383960485458374,-0.19022704660892487,-0.1933717578649521,-0.3498305380344391,0.04047246277332306,0.4129868447780609,0.04454928636550903,-0.19282743334770203,0.059907216578722,-0.09646059572696686,0.014817947521805763,0.18901443481445312,0.12903724610805511,-0.01642937771975994,-0.008875798434019089,-0.14660298824310303,0.014906179159879684,0.2767189145088196,-0.09769798070192337,-0.052097972482442856,0.22021272778511047,-0.04623331129550934,0.10973889380693436,0.03264154866337776,0.04819159954786301,-0.041363753378391266,0.017012450844049454,-0.0914359837770462,0.0680915117263794,0.06758137792348862,-0.03743337467312813,-0.01224474050104618,0.06596556305885315,-0.17023056745529175,0.06507200747728348,0.01670718938112259,-0.010935142636299133,0.04595358669757843,-0.037491604685783386,-0.14143195748329163,-0.07816988974809647,0.14900244772434235,-0.22393015027046204,0.20414145290851593,0.16864429414272308,0.1270574927330017,0.147845059633255,0.1014191284775734,0.06872675567865372,-0.07439520955085754,-0.02289590984582901,-0.17861680686473846,0.017700864002108574,0.1189676895737648,0.02733468823134899,0.12721888720989227,-0.02536717616021633
+
+Python Output: No Match
+
+Python Output: Error: Missing image file or encoding.
+
+Student ID: 25, Image: ../uploads/67c63323403ea.png, Result: True
+Python Output: Processing Student ID: 25
+Success: Face encoding stored for Student ID 25
+
+Python Output: No Match
+
+Python Output: Error: Missing image file or encoding.
+
+Python Output: No Match
+
+Python Output: Error: No face detected.
+
+Python Output: Error: Missing image file or encoding.
+
+Python Output: Error: No face detected.
+
+Python Output: No Match
+
+Python Output: Error: Missing image file or encoding.
+
+Python Output: No Match
+
+Student ID: 26, Image: ../uploads/67c634d461e60.png, Result: False
+Python Output: Processing Student ID: 26
+Error: No face detected in the image.
+
+Student ID: 28, Image: ../uploads/67c634f66ce18.png, Result: False
+Python Output: Processing Student ID: 28
+Error: No face detected in the image.
+
+Student ID: 29, Image: ../uploads/67c6351d9ca47.png, Result: True
+Python Output: Processing Student ID: 29
+Success: Face encoding stored for Student ID 29
+
+Python Output: 
+Python Output: Error: Missing image file or encoding.
+
+Python Output: 
+Python Output: 
+Face Encoding Base64: 
+Python Output: 
+Python Output: Error: Missing image file or encoding.
+
+Python Output: 
+Python Output: 
+Face Encoding Base64: 
+Python Output: 
+Face Encoding Base64: 
+Python Output: 
+Face Encoding Base64: 
+Python Output: 
+Face Encoding Base64: 
+Python Output: 
+Face Encoding Base64: 
+Python Output: 
+Face Encoding Base64: 
+Face Encoding Length: 1024 for Student ID: 23
+Python Output: 
+Face Encoding Base64: 
+Face Encoding Length: 1024 for Student ID: 23
+Python Output: 
+Python Output: Processing Student ID: 30
+
+Face Encoding Base64: 
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: 
+Face Encoding Base64: 
+Face Encoding Length: 1024 for Student ID: 30
+Decoded Encoding Length: 128
+No Match Found
+Python Output: No Match Found
+
+Face Encoding Base64: 
+Face Encoding Length: 1024 for Student ID: 30
+Decoded Encoding Length: 128
+No Match Found
+Python Output: No Match Found
+
+Face Encoding Length: 1024 for Student ID: 30
+Decoded Encoding Length: 128
+No Match Found
+Python Output: No Match Found
+
+Face Encoding Base64: 
+Face Encoding Length: 1024 for Student ID: 30
+Decoded Encoding Length: 128
+No Match Found
+Python Output: No Match Found
+
+Face Encoding Base64: 
+Face Encoding Length: 1024 for Student ID: 30
+Decoded Encoding Length: 128
+No Match Found
+Python Output: No Match Found
+
+Face Encoding Length: 1024 for Student ID: 30
+Decoded Encoding Length: 128
+No Match Found
+Python Output: No Match Found
+Face Encoding Length: 1024 for Student ID: 30
+Decoded Encoding Length: 128
+Error: No face detected in the image.
+Python Output: Error: No face detected in the image.
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: Error: No face detected.
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: Decoded Encoding Length: 128
+Captured Encoding Length: 128
+No Match Found
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: Decoded Encoding Length: 128
+Captured Encoding Length: 128
+No Match Found
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: Decoded Encoding Length: 128
+Captured Encoding Length: 128
+Stored Encoding Sample: [0.00047941 0.00047703 0.0004781  0.00047578 0.00047924]
+Captured Encoding Sample: [-0.08832603  0.0671115   0.03707982 -0.05620813 -0.02130035]
+No Match Found
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: Decoded Encoding Length: 128
+Captured Encoding Length: 128
+Stored Encoding Sample: [0.00047941 0.00047703 0.0004781  0.00047578 0.00047924]
+Captured Encoding Sample: [-0.1062813   0.05012382  0.04560354 -0.06505765 -0.02666164]
+No Match Found
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: Error: No face detected.
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: Decoded Encoding Length: 128
+Captured Encoding Length: 128
+Stored Encoding Sample: [0.00047941 0.00047703 0.0004781  0.00047578 0.00047924]
+Captured Encoding Sample: [-1.00019336e-01  5.45736700e-02  5.61800487e-02 -5.67780957e-02
+ -7.70792831e-05]
+No Match Found
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: Decoded Encoding Length: 128
+Captured Encoding Length: 128
+Stored Encoding Sample: [0.00047941 0.00047703 0.0004781  0.00047578 0.00047924]
+Captured Encoding Sample: [-0.10060348  0.04426146  0.04832419 -0.05668688 -0.02320574]
+No Match Found
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: ERROR: No face detected in captured image
+Face Encoding Length: 1024 for Student ID: 30
+Python Output: Captured Encoding Length: 128
+Decoded Encoding Length: 128
+Stored Encoding Sample: [0.00047941 0.00047703 0.0004781  0.00047578 0.00047924]
+Captured Encoding Sample: [-0.10621987  0.06103555  0.05013344 -0.05050251 -0.02455543]
+No Match Found
