@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <script>
+        let videoStream = null;
+
+        function captureImage() {
+            let video = document.getElementById("video");
+            let canvas = document.getElementById("canvas");
+            let context = canvas.getContext("2d");
+
+            // Capture the image
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            let imageData = canvas.toDataURL("image/png");
+
+            // Store image in hidden input
+            document.getElementById("face_image").value = imageData;
+
+            // Show preview
+            document.getElementById("imagePreview").src = imageData;
+            document.getElementById("imagePreview").style.display = "block";
+        }
+
+        function startCamera() {
+            let video = document.getElementById("video");
+
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    video.srcObject = stream;
+                    videoStream = stream;
+                })
+                .catch(err => {
+                    console.error("Webcam error:", err);
+                    alert("Error accessing webcam. Please allow camera permissions.");
+                });
+        }
+
+        function stopCamera() {
+            if (videoStream) {
+                videoStream.getTracks().forEach(track => track.stop());
+            }
+        }
+
+        function validateForm() {
+            if (!document.getElementById("face_image").value) {
+                alert("Please capture an image before logging in.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body onload="startCamera()" onunload="stopCamera()">
+    <h2>Login</h2>
+
+    <video id="video" width="400" height="300" autoplay></video><br>
+    <button type="button" onclick="captureImage()">Capture Face</button>
+
+    <form id="loginForm" action="../php/login.php" method="POST" onsubmit="return validateForm()">
+        <input type="hidden" name="face_image" id="face_image">
+        <br>
+        <img id="imagePreview" style="display:none; width: 200px; height: auto; border: 2px solid black; margin-top: 10px;">
+        <br>
+        <button type="submit">Login</button>
+    </form>
+
+    <canvas id="canvas" width="400" height="300" style="display:none;"></canvas>
+</body>
+</html>

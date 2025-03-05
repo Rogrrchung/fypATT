@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <script>
+        let videoStream = null;
+
+        function captureImage() {
+            const video = document.querySelector("video");
+            const canvas = document.createElement("canvas");
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            const context = canvas.getContext("2d");
+
+            // Draw the video frame onto the canvas
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // Convert to Base64 and store in hidden input
+            const imageData = canvas.toDataURL("image/png");
+            document.getElementById("captured_image").value = imageData;
+
+            // Show captured image
+            document.getElementById("imagePreview").src = imageData;
+            document.getElementById("imagePreview").style.display = "block";
+
+            // Show confirmation
+            alert("Image Captured Successfully!");
+        }
+
+        function startWebcam() {
+            const video = document.querySelector("video");
+
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    video.srcObject = stream;
+                    videoStream = stream;
+                })
+                .catch(error => {
+                    console.error("Webcam error: ", error);
+                    alert("Error accessing webcam. Please allow camera permissions.");
+                });
+        }
+
+        function stopWebcam() {
+            if (videoStream) {
+                videoStream.getTracks().forEach(track => track.stop());
+            }
+        }
+
+        function validateForm() {
+            if (!document.getElementById("captured_image").value) {
+                alert("Please capture an image before submitting.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body onload="startWebcam()" onunload="stopWebcam()">
+    <h2>Student Registration</h2>
+    <form action="../php/register.php" method="POST" onsubmit="return validateForm()">
+        <label>Student ID:</label>
+        <input type="text" name="student_id" id="student_id" readonly><br>
+
+        <label>Username:</label>
+        <input type="text" name="username" required><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br>
+
+        <label>Contact Number:</label>
+        <input type="text" name="contact_number" required><br>
+
+        <video autoplay></video><br>
+        <button type="button" onclick="captureImage()">Capture Face</button>
+        
+        <input type="hidden" name="face_image" id="captured_image">
+        
+        <br>
+        <img id="imagePreview" style="display:none; width: 200px; height: auto; border: 2px solid black; margin-top: 10px;">
+
+        <br>
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        // Fetch next student ID from server
+        fetch("../php/get_next_student_id.php")
+            .then(response => response.text())
+            .then(data => document.getElementById("student_id").value = data)
+            .catch(error => console.error("Error fetching student ID:", error));
+    </script>
+</body>
+</html>
